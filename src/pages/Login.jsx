@@ -1,5 +1,11 @@
 import { useState } from 'react';
-import { Button, Checkbox, TextInputField, TickIcon } from 'evergreen-ui';
+import {
+  Button,
+  Checkbox,
+  EditIcon,
+  TextInputField,
+  TickIcon
+} from 'evergreen-ui';
 
 function Login() {
   function RememberMeCheckbox() {
@@ -43,6 +49,14 @@ function Login() {
           Submit
         </Button>
       </form>
+
+      <Button
+        height={40}
+        iconAfter={EditIcon}
+        intent="danger"
+        appearance="minimal">
+        Set a new Password
+      </Button>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Button, /*Checkbox,*/ Form, Input } from 'antd';
 
 function SignUp() {
   const onSignUpFormSubmit = (values) => {
@@ -14,7 +14,7 @@ function SignUp() {
       <h1>Sign Up</h1>
 
       <Form
-        name="basic"
+        name="signup-form"
         labelCol={{ span: 8 }}
         wrapperCol={{ span: 16 }}
         initialValues={{ remember: true }}
@@ -22,12 +22,12 @@ function SignUp() {
         onFinishFailed={onFinishFailed}
         autoComplete="off">
         <Form.Item
-          label="Username"
-          name="username"
+          label="Email"
+          name="email"
           rules={[
             {
               required: true,
-              message: 'Please input your username!'
+              message: 'Please input your email adress:'
             }
           ]}>
           <Input />
@@ -39,18 +39,30 @@ function SignUp() {
           rules={[
             {
               required: true,
-              message: 'Please input your password!'
+              message: 'Please input your password:'
             }
           ]}>
           <Input.Password />
         </Form.Item>
 
         <Form.Item
+          label="Password Confirmation"
+          name="password-confimation"
+          rules={[
+            {
+              required: true,
+              message: 'Please confirm your password:'
+            }
+          ]}>
+          <Input.Password />
+        </Form.Item>
+
+        {/* <Form.Item
           name="remember"
           valuePropName="checked"
           wrapperCol={{ offset: 8, span: 16 }}>
           <Checkbox>Remember me</Checkbox>
-        </Form.Item>
+        </Form.Item> */}
 
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
           <Button type="primary" htmlType="submit">
