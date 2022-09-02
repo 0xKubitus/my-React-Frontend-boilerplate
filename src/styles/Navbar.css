@@ -1,0 +1,17 @@
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+.navbar-connect-links-block {
+  /* display: flex;
+  justify-content: space-between; */
+  margin-right: 20px;
+}
+
+.navbar-connection-links {
+  margin-right: 20px;
+  margin-left: 10px;
+}
