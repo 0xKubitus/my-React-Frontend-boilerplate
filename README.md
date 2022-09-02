@@ -1,3 +1,17 @@
+https://noisy-cobbler-dd2.notion.site/Cr-ation-de-mon-Boilerplate-React-Frontend-brancher-une-Backend-API-App-109acde8a3dc45dc85ef8f8f3cd8a21a
+
+BOILERPLATE MORE TOO MY LIKING => ESLINT IS LESS ANNOYING
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
