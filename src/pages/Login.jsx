@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { Button, Checkbox, TextInputField, TickIcon } from 'evergreen-ui';
 
-function ControlledCheckbox() {
-  const [checked, setChecked] = useState(true);
-  return (
-    <Checkbox
-      label="Remember me?"
-      checked={checked}
-      onChange={(e) => setChecked(e.target.checked)}
-    />
-  );
-}
-
 function Login() {
+  function RememberMeCheckbox() {
+    const [checked, setChecked] = useState(true);
+    return (
+      <Checkbox
+        label="Remember me?"
+        checked={checked}
+        onChange={(e) => setChecked(e.target.checked)}
+      />
+    );
+  }
+
   return (
     <div className="signup-main-div">
       <h1>Log in</h1>
@@ -33,7 +33,7 @@ function Login() {
           // onChange={e => setValue(e.target.value)}
         />
 
-        <ControlledCheckbox />
+        <RememberMeCheckbox />
 
         <Button
           height={40}

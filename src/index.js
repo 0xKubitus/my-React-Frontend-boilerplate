@@ -6,6 +6,7 @@ import Navbar from 'components/Navbar';
 import Home from 'pages/Home';
 import SignUp from 'pages/SignUp';
 import Login from 'pages/Login';
+import ResetPassword from 'pages/PasswordReset';
 
 import './styles/index.css';
 // import reportWebVitals from './reportWebVitals';
@@ -19,6 +20,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/sign_up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/password_reset" element={<ResetPassword />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

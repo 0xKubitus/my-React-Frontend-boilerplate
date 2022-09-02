@@ -1,43 +1,63 @@
-// import Navbar from 'components/Navbar';
-import { Button, TextInputField, TickIcon } from 'evergreen-ui';
+import { Button, Checkbox, Form, Input } from 'antd';
 
 function SignUp() {
+  const onSignUpFormSubmit = (values) => {
+    console.log('Success:', values);
+  };
+
+  const onFinishFailed = (errorInfo) => {
+    console.log('Failed:', errorInfo);
+  };
+
   return (
     <div className="signup-main-div">
       <h1>Sign Up</h1>
-      <form>
-        <TextInputField
-          label="Email"
-          required
-          description=""
-          value=""
-          // onChange={e => setValue(e.target.value)}
-        />
 
-        <TextInputField
+      <Form
+        name="basic"
+        labelCol={{ span: 8 }}
+        wrapperCol={{ span: 16 }}
+        initialValues={{ remember: true }}
+        onFinish={onSignUpFormSubmit}
+        onFinishFailed={onFinishFailed}
+        autoComplete="off">
+        <Form.Item
+          label="Username"
+          name="username"
+          rules={[
+            {
+              required: true,
+              message: 'Please input your username!'
+            }
+          ]}>
+          <Input />
+        </Form.Item>
+
+        <Form.Item
           label="Password"
-          required
-          description=""
-          value=""
-          // onChange={e => setValue(e.target.value)}
-        />
+          name="password"
+          rules={[
+            {
+              required: true,
+              message: 'Please input your password!'
+            }
+          ]}>
+          <Input.Password />
+        </Form.Item>
 
-        <TextInputField
-          label="Confirm Password"
-          required
-          description=""
-          value=""
-          // onChange={e => setValue(e.target.value)}
-        />
+        <Form.Item
+          name="remember"
+          valuePropName="checked"
+          wrapperCol={{ offset: 8, span: 16 }}>
+          <Checkbox>Remember me</Checkbox>
+        </Form.Item>
 
-        <Button
-          height={40}
-          iconAfter={TickIcon}
-          intent="success"
-          appearance="primary">
-          Save
-        </Button>
-      </form>
+        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
   );
 }
