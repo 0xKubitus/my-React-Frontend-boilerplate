@@ -1,16 +1,20 @@
-https://noisy-cobbler-dd2.notion.site/Cr-ation-de-mon-Boilerplate-React-Frontend-brancher-une-Backend-API-App-109acde8a3dc45dc85ef8f8f3cd8a21a
+# PERSONAL BOILERPLATE USING:
 
-BOILERPLATE MORE TOO MY LIKING => ESLINT IS LESS ANNOYING
+- react-router-dom
+- js-cookie
+- antdesign
+- evergreen-ui
+- eslint (in a 'light' way)
+- prettier
+- eslint-config-prettier
+- eslint-plugin-prettier
+- jsconfig.json file (to have a better path management for imports)
+- jasmine
 
+### detailed tutorial:
 
-
-
-
-
-
-
-
-
+-> https://noisy-cobbler-dd2.notion.site/Cr-ation-de-mon-Boilerplate-React-Frontend-brancher-une-Backend-API-App-109acde8a3dc45dc85ef8f8f3cd8a21a
+_(only in french for now, but will most likely be translated to english someday)_
 
 # Getting Started with Create React App
 
